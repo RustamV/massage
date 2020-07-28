@@ -1,0 +1,85 @@
+.banner {
+  background-image: url(../img/banner-back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 31px;
+
+  @include media-breakpoint-up(lg) {
+    background-image: url(../img/back.jpg);
+    padding-bottom: 60px;
+
+    min-height: 100vh;
+  }
+}
+
+.banner__container {
+  @include make-container();
+
+  @include media-breakpoint-up(sm) {
+    max-width: $container-sm;
+  }
+
+  @include media-breakpoint-up(md) {
+    max-width: $container-md;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: $container-lg;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: $container-xl;
+  }
+}
+
+.banner__title {
+  font-family: $font-2;
+  font-size: 51px;
+  font-weight: 400;
+
+  @include media-breakpoint-up(md) {
+    font-size: 72px;
+  }
+}
+
+.banner__subtitle {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 300;
+  margin-bottom: 30px;
+  padding: 3px 0 0 3px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+}
+
+.banner__offer-text {
+  line-height: 23px;
+  width: 300px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 0 0 3px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+    width: 325px;
+    margin-bottom: 25px;
+    line-height: 28px;
+  }
+}
+
+.banner__offer-text strong {
+  color: #ff9e0e;
+}
+
+.banner__btn {
+  margin-bottom: 30px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 90px;
+  }
+}

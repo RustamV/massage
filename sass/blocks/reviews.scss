@@ -1,0 +1,226 @@
+.reviews {
+  background-image: url(../img/reviews-bcgr.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 34px;
+  padding-bottom: 26px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 88px;
+    padding-bottom: 0;
+  }
+}
+
+.reviews__container {
+  position: relative;
+  @include make-container();
+
+  @include media-breakpoint-up(sm) {
+    max-width: $container-sm;
+  }
+
+  @include media-breakpoint-up(md) {
+    max-width: $container-md;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: $container-lg;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: $container-xl;
+  }
+
+}
+
+.reviews__item {
+  // height: 200px;
+  position: relative;
+}
+
+.reviews__item img {
+  // width: 100%;
+  // height: 201px;
+  // object-fit: cover;
+  // margin-top: -7px;
+  // margin-left: -4px;
+  width: 100%;
+  height: 167px;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+
+  @include media-breakpoint-up(sm) {
+    height: 220px;
+  }
+}
+
+.reviews__slider {
+  // margin-top: 100px;
+  position: relative;
+}
+
+.reviews__slider .slick-slide {
+  opacity: 0.5;
+  overflow: hidden;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.reviews__slider .slick-slide.slick-center {
+  opacity: 1;
+  z-index: 9;
+
+  @include media-breakpoint-up(lg) {
+    transform: scale(1.5);
+    box-shadow: 0 16px 43px 0 rgba(#000000, 0.16);
+  }
+}
+
+.reviews__slider .slick-arrow {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 13px 13px 0 rgba(#b5c2b2, 0.26);
+  position: relative;
+  background-color: $white-color;
+  border-radius: 50%;
+  z-index: 9;
+  position: absolute;
+  transition: 0.3s;
+
+  &:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+  }
+
+  &:hover, &:focus {
+    background-color: $white-color;
+    box-shadow: 0 13px 13px 0 rgba(#b5c2b2, 0.26), 0 0 16px 0 rgba(#b5c2b2, 0.26);
+  }
+}
+
+.reviews__slider .slick-next {
+  right: 24%;
+  top: 50%;
+  transform: translate(0, -100%);
+
+  &:before {
+    background-image: url(../img/arrow-left.svg);
+    transform: rotate(180deg);
+  }
+}
+
+.reviews__slider .slick-prev {
+  left: 24%;
+  top: 50%;
+  transform: translate(0, -100%);
+
+  &:before {
+    background-image: url(../img/arrow-left.svg);
+  }
+}
+
+.reviews__slider .slick-slide button {
+  display: none;
+}
+
+.reviews__slider .slick-slide.slick-current button {
+  display: block;
+}
+
+.reviews__slider .slick-list {
+  // overflow: hidden;
+  padding: 51px 0 !important;
+
+  @include media-breakpoint-up(md) {
+    padding: 108px 0 164px !important;
+  }
+}
+
+.reviews__tabs {
+  text-align: center;
+  margin-top: 33px;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-bottom: 20px;
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.05);
+  width: 260px;
+  border-radius: 43px;
+  border-bottom: none;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 40px;
+  }
+
+}
+
+.reviews__tab {
+  width: 130px;
+  height: 100%;
+}
+
+.reviews__tab a.active {
+  background: linear-gradient(0, #ff9900, #ffd89e);
+  background-color: #ff9900 !important;
+  border-radius: 40px;
+  box-shadow: 0 16px 32px 0 rgba(255, 153, 0, 0.58);
+  color: $white-color !important;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.17);
+
+}
+
+.reviews__tab a {
+  border: none !important;
+  height: 100%;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.reviews__controls {
+  position: relative;
+  margin-top: 19px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0px;
+  }
+
+}
+
+.reviews__pagination {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 15px);
+  display: block;
+
+  @include media-breakpoint-up(md) {
+    bottom: 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.reviews__pagination span {
+  font-family: $font-2;
+  font-size: 30px;
+}
+
+.tab-content > .tab-pane {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.tab-content > .active {
+  height: auto;
+}

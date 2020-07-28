@@ -1,0 +1,43 @@
+.company-services {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
+  max-width: 300px;
+  padding: 7px 0 0;
+
+  @include media-breakpoint-up(md) {
+    max-width: 535px;
+    margin-bottom: 18px;
+  }
+}
+
+.company-services__item {
+  position: relative;
+  width: 251px;
+  line-height: 20px;
+  margin-bottom: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-left: 29px;
+
+  min-height: 25px;
+  font-size: 14px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -1px;
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/pin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @include media-breakpoint-up(md) {
+    max-width: 535px;
+    margin-bottom: 28px;
+    padding-left: 37px;
+  }
+}

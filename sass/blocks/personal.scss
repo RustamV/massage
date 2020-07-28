@@ -1,0 +1,86 @@
+.personal {
+  width: 100%;
+  max-width: 290px;
+  padding: 164px 42px 37px 35px;
+  margin: 0 auto;
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 14px 27px 0 rgba(#000000, 0.19);
+  text-align: left;
+  font-size: 14px;
+  line-height: 25px;
+
+  @include media-breakpoint-up(xl) {
+    background-position: top;
+    background-size: cover;
+    margin: 0 30px;
+    max-width: 370px;
+    padding: 221px 30px 50px 60px;
+  }
+
+  &--marina {
+    background-image: url(../img/woman-2.png);
+  }
+
+  &--olga {
+    background-image: url(../img/master-1.png);
+  }
+
+  &--elizaveta {
+    background-image: url(../img/woman-3.png);
+  }
+}
+
+.personal__title {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: $font-SFUID;
+  margin-bottom: 9px;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
+
+.personal__subtitle {
+  line-height: 14px;
+  font-size: 13px;
+  letter-spacing: -0.4px;
+  margin-bottom: 18px;
+  color: $light-grey-color;
+  font-weight: 300;
+  font-family: $font-SFUID;
+  padding-bottom: 24px;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 15px;
+    margin-bottom: 28px;
+    padding-bottom: 29px;
+    line-height: initial;
+    letter-spacing: initial;
+  }
+
+  &::after {
+    content: "";
+    height: 1px;
+    left: 0;
+    width: 70px;
+    position: absolute;
+    bottom: -0px;
+    background-color: $light-orange-color;
+  }
+}
+
+.personal__description {
+  font-size: 12px;
+  line-height: 19px;
+
+  @include media-breakpoint-up(xl) {
+    line-height: 25px;
+  }
+}

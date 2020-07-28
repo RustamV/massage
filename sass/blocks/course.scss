@@ -1,0 +1,80 @@
+.course {
+  border-radius: 20px;
+  box-shadow: 0 6px 27px 0 rgba(#000000, 0.13);
+  padding: 33px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include media-breakpoint-up(md) {
+    max-width: 530px;
+    padding: 54px 43px 60px;
+  }
+
+  &:nth-child(1) {
+    background-image: url(../img/course-1.png);
+    background-size: cover;
+    //background-position: -62px 1px;
+    background-position: top right;
+    margin-bottom: 26px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 38px;
+    }
+
+  }
+
+  &:nth-child(2) {
+    background-image: url(../img/course-2.png);
+    background-size: cover;
+    //background-position: -77px -3px;
+    background-position: top right;
+    padding-top: 39px;
+    padding-bottom: 40px;
+  }
+}
+
+.course__title {
+
+  font-size: 18px;
+  font-weight: 400;
+
+  width: 76%;
+  line-height: 24px;
+  margin-bottom: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 24px;
+    margin-bottom: 23px;
+    width: 70%;
+    line-height: 34px;
+  }
+}
+
+.course__item {
+  font-size: 12px;
+  padding-left: 27px;
+  background-image: url(../img/pin.png);
+  background-repeat: no-repeat;
+  line-height: 1.7;
+  background-position: -3px 3px;
+  background-size: 25px;
+  min-height: 25px;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 37px;
+    font-size: 16px;
+  }
+
+  &:last-child {
+    background-position: -3px 1px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 13px;
+    }
+  }
+}

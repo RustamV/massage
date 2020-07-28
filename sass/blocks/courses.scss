@@ -1,0 +1,68 @@
+.courses {
+  position: relative;
+  padding-top: 71px;
+  background-image: url("../img/courses-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#fff, 0.4%);
+    z-index: -1;
+  }
+
+  @include media-breakpoint-up(md) {
+    background-image: url(../img/courses-bcgr.png);
+
+    background-size: cover;
+  }
+}
+
+.courses__container {
+  @include make-container();
+
+  @include media-breakpoint-up(sm) {
+    max-width: $container-sm;
+  }
+
+  @include media-breakpoint-up(md) {
+    max-width: $container-md;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: $container-lg;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: $container-xl;
+  }
+  position: relative;
+}
+
+.courses__wrapper {
+  margin-top: 42px;
+  margin-bottom: 205px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+
+  @include media-breakpoint-up(sm) {
+    align-items: unset;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 44px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 65px;
+    margin-bottom: 44px;
+  }
+}

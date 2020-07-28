@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    font-family: $font-SFUID;
+    font-weight: 300;
+    font-size: 14px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+    }
+}
+
+a {
+  color: $black-color;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+
+
+
+

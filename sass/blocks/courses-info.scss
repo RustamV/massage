@@ -1,0 +1,162 @@
+.courses-info {
+  @include make-row();
+  // margin-top: 46px;
+  padding-bottom: 3px;
+  //justify-content: center;
+
+  @include media-breakpoint-up(lg) {
+    justify-content: space-between;
+  }
+}
+
+.courses-info__left {
+  @include make-col(12);
+  @include make-col-ready();
+  margin-top: 24px;
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up(md) {
+    @include make-col(9);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+    margin-bottom: 0;
+    margin-top: 14px;
+  }
+}
+
+.courses-info__right {
+  @include make-col(12);
+  @include make-col-ready();
+
+  @include media-breakpoint-up(md) {
+    @include make-col(9);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+  }
+}
+
+.courses-info__pricing {
+  display: flex;
+  margin-bottom: 35px;
+  justify-content: center;
+  line-height: 35px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 54px;
+    justify-content: flex-start;
+  }
+}
+
+.courses-info__pricing p {
+  font-size: 8px;
+  color: $grey-color;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-right: 11px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+  }
+}
+
+.courses-info__pricing p:first-child {
+  margin-right: 50px;
+  letter-spacing: 1.3px;
+
+  @include media-breakpoint-up(md) {
+    margin-right: 136px;
+  }
+}
+
+.courses-info__pricing p:first-child span {
+  font-size: 8px;
+  bottom: 0px;
+  right: -21px;
+  letter-spacing: 1.5px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+    bottom: 0px;
+    right: -36px;
+  }
+}
+
+.courses-info__pricing p:nth-child(2) span {
+  font-size: 9px;
+  bottom: 0px;
+  right: -29px;
+  letter-spacing: 0.6px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+    right: -53px;
+  }
+}
+
+.courses-info__pricing p b {
+  display: inline-block;
+  font-family: $font-2;
+  font-size: 36px;
+  color: $black-color;
+  position: relative;
+  font-weight: 300;
+  letter-spacing: 5.8px;
+  text-transform: lowercase;
+  line-height: 25px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 53px;
+    margin-top: 15px;
+  }
+}
+
+.courses-info__pricing p b span {
+  font-size: 8px;
+  font-family: $font-SFUID;
+  color: $grey-color;
+  font-weight: 300;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 18px;
+  letter-spacing: 2px;
+  right: -25px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+    bottom: 26px;
+    right: -40px;
+  }
+}
+
+.courses-info__offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}
+
+.courses-info__offer p {
+  max-width: 260px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 19px;
+  margin-right: 0px;
+  margin-top: -14px;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+    margin-top: 0;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}

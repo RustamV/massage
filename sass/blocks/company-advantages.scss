@@ -1,0 +1,49 @@
+.company-advantages {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 28px;
+    // margin-top: 62px;
+  }
+}
+
+.company-advantages__item {
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 22px 50%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px 0 rgba(#b5c2b2, 0.3);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 18px 20px 15px 84px;
+  width: 100%;
+  margin-bottom: 19px;
+
+  @include media-breakpoint-up(lg) {
+    line-height: 23px;
+    padding: 26px 37px 24px 104px;
+    background-position-x: 30px;
+    background-position-y: 28px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    background-size: 45px;
+  }
+
+  &--shield {
+    background-image: url(../img/shield.svg);
+  }
+  &--light {
+    background-image: url(../img/light.svg);
+  }
+  &--hand {
+    background-image: url(../img/hand.svg);
+  }
+  &--nurse {
+    background-image: url(../img/nurse.svg);
+  }
+}

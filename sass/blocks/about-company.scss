@@ -1,0 +1,82 @@
+.about-company {
+  background-image: url(../img/about-bckgr.png);
+
+  background-repeat: no-repeat;
+
+  background-position-x: right;
+  background-position-y: 20%;
+  padding-top: 13px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 75px;
+    background-image: url(../img/video.png);
+    background-size: cover;
+    background-position: center;
+
+  }
+}
+
+.about-company__title {
+  padding: 91px 0 0px 0;
+  line-height: 34px;
+  margin-bottom: 27px;
+
+  @include media-breakpoint-up(md) {
+    line-height: 52px;
+    padding: 85px 0 0 0px;
+    margin-bottom: 63px;
+  }
+}
+
+.about-company__container {
+  @include make-container();
+
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(sm) {
+    max-width: $container-sm;
+  }
+
+  @include media-breakpoint-up(md) {
+    max-width: $container-md;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: $container-lg;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: $container-xl;
+  }
+
+  position: relative;
+}
+
+.about-company__btn {
+  width: 206px;
+  letter-spacing: 1.1px;
+  box-shadow: 0 3px 0 0px #ee9308, 0 16px 32px 0 rgba(255, 153, 0, 0.58);
+  margin-bottom: 273px;
+  margin-top: -7px;
+  align-self: center;
+
+  @include media-breakpoint-up(md) {
+    width: 280px;
+    box-shadow: 0 5px 0 0px #ee9308, 0 16px 32px 0 rgba(255, 153, 0, 0.58);
+    margin-bottom: 81px;
+    margin-top: 0;
+    align-self: flex-start;
+  }
+}
+
+.about-company__left {
+  display: flex;
+  flex-direction: column;
+  max-width: 290px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    max-width: 370px;
+  }
+}

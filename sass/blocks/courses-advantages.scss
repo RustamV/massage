@@ -1,0 +1,40 @@
+.courses-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 482px;
+  justify-content: center;
+
+  @include media-breakpoint-up(md) {
+    justify-content: space-between;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-left: auto;
+  }
+}
+
+.courses-advantages__item {
+  background-image: url(../img/tick.png);
+  background-repeat: no-repeat;
+  background-size: 44px;
+  background-position: 2px 1px;
+  max-width: 300px;
+  width: 280px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+  padding-left: 57px;
+  min-height: 40px;
+
+  @include media-breakpoint-up(md) {
+    margin-right: 0px;
+    padding-top: 48px;
+    max-width: 220px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 41px;
+    background-position: -11px -3px;
+    background-size: auto;
+  }
+}

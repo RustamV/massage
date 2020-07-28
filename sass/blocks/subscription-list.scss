@@ -1,0 +1,15 @@
+.subscription-list {
+  margin-bottom: 30px;
+}
+
+.subscription-list__item {
+  margin-bottom: 15px;
+  padding-left: 30px;
+  font-size: 14px;
+  color: $light-grey-color;
+}
+
+.subscription-list__item strong {
+  font-size: 16px;
+  color: $black-color;
+}

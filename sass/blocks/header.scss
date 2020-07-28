@@ -1,0 +1,262 @@
+.header {
+  @include make-container();
+  display: flex;
+  justify-content: space-between;
+  //height: 55px;
+  max-width: 1360px;
+  padding-top: 19px;
+  margin-bottom: 34px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 45px;
+    margin-bottom: 81px;
+  }
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 8px;
+  //width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    width: auto;
+    margin-right: 0;
+    justify-content: flex-start;
+  }
+}
+
+.header__right {
+  display: flex;
+
+  align-items: flex-end;
+  flex-shrink: 0;
+
+  flex-direction: column-reverse;
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.header__hamburger {
+  width: 18px;
+  height: 15px;
+  position: relative;
+  //margin: 0 10px;
+  cursor: pointer;
+  z-index: 91;
+  display: block;
+  margin-right: 18px;
+
+  @include media-breakpoint-up(sm) {
+    //margin: 0 20px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.header__hamburger.active {
+  transform: rotate(90deg);
+}
+
+.header__hamburger span {
+  width: 100%;
+  height: 2px;
+  background: $black-color;
+  position: absolute;
+  top: 0;
+
+  &:nth-child(2) {
+    top: 6px;
+  }
+
+  &:nth-child(3) {
+    top: 12px;
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  max-width: 106px;
+  width: 100%;
+
+   display: none;
+  // width: 205px;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 205px;
+
+    display: inline-block;
+    margin-right: 50px;
+  }
+}
+
+.header__logo img {
+  display: block;
+  max-width: 100%;
+}
+
+.header__card {
+  background-color: $white-color;
+  background-size: 17px;
+  background-position: 15px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 3px 21px 0 rgba(#000000, 0.09);
+  color: $grey-color;
+  display: none;
+  padding: 12px 25px 12px 40px;
+  font-family: $font-SFUID;
+  font-weight: 300;
+  font-size: 14px;
+
+  &--city {
+    position: relative;
+    padding: 8px 30px 8px 30px;
+    background-position: 15% 49%;
+    background-size: 11px;
+    background-image: url(../img/maps-and-flags.svg);
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      width: 5px;
+      height: 5px;
+      border-right: 1px solid #333;
+      border-bottom: 1px solid #333;
+      transform: rotate(45deg) translate(-90%);
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: auto;
+      height: auto;
+      display: block;
+      padding: 12px 25px 12px 40px;
+      background-position: 15px;
+      background-size: 17px;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &--phone {
+    font-size: 10px;
+    display: inline-block;
+    background-image: url(../img/call-answer.svg);
+    background-position: 12px 50%;
+    background-size: 12px;
+    font-size: 11px;
+    padding: 0px 0px 0px 28px;
+    background-color: transparent;
+    box-shadow: none;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 14px;
+      padding: 13px 15px 13px 45px;
+      background-position: 15px 50%;
+      background-size: 17px;
+      background-color: $white-color;
+      box-shadow: 0 3px 21px 0 rgba(#000000, 0.09);
+    }
+  }
+
+  &--invisible {
+    // padding-left: 40px;
+    // padding-right: 20px;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-size: 10px;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 14px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+
+    }
+  }
+}
+
+.header__card strong {
+
+  color: $black-color;
+  font-family: $font-SFUID;
+  font-weight: 400;
+}
+
+.header__card--city strong {
+
+
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 8px;
+  }
+}
+
+.header__text--dotted {
+  background-color: transparent;
+  border: none;
+  color: $black-color;
+  cursor: pointer;
+
+  position: relative;
+  -webkit-appearance: none;
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+    margin: 0 25px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 101px;
+    height: 0;
+    border-bottom: 1px dotted #333333;
+  }
+}
+
+.header__right .header__text--dotted {
+  display: block;
+  margin-top: 3px;
+  font-size: 10px;
+
+  &:after {
+    width: 75px;
+
+    @include media-breakpoint-up(lg) {
+      width: 101px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    font-size: 14px;
+    top: unset;
+    right: unset;
+    margin-top: 0;
+  }
+}
+
+.header__right .header__text {
+  //display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: inline-block;
+  }
+}

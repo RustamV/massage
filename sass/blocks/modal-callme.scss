@@ -1,0 +1,120 @@
+.modal-callme .modal-content {
+  max-width: 319px;
+  width: 100%;
+  height: 388px;
+  padding: 16px;
+  //position: absolute;
+  //top: 5vh;
+  //left: 50%;
+  //z-index: 16;
+  margin: 0 auto;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  //transform: translateX(-50%);
+}
+
+.modal-callme__title {
+  font-family: $font-2;
+  font-size: 24px;
+  color: #333333;
+  margin-top: 34px;
+  margin-bottom: 31px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.modal-callme__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-callme__form input[type="text"] {
+  border: none;
+  background: #f8f7f7 url(../img/man-user.png) no-repeat 17px center;
+  width: 244px;
+  height: 44px;
+  border-radius: 18.5px;
+  margin-bottom: 27px;
+  padding-left: 51px;
+  font-size: 14px;
+  color: #9d9d9d;
+  box-sizing: border-box;
+  font-family: $font-SFUID;
+  font-weight: 300;
+}
+
+.modal-callme__form input[type="tel"] {
+  border: none;
+  background: #f8f7f7 url(../img/call-answer.png) no-repeat 17px center;
+  width: 244px;
+  height: 44px;
+  border-radius: 18.5px;
+  margin-bottom: 27px;
+  padding-left: 51px;
+  font-size: 14px;
+  color: #9d9d9d;
+  font-family: $font-SFUID;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.modal-callme__form button {
+  width: 244px;
+  height: 52px;
+  margin-bottom: 15px;
+}
+
+.modal-callme__form input[type="checkbox"] {
+  width: 11px;
+  height: 11px;
+  position: relative;
+  position: absolute;
+  left: 48px;
+  bottom: 17px;
+  border: none;
+  border-radius: 18.5px;
+  margin-bottom: 27px;
+  padding-left: 51px;
+  font-size: 14px;
+  color: #9d9d9d;
+  box-sizing: border-box;
+
+  &:before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #fcbd18;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.modal-callme label {
+  font-size: 10px;
+  color: #666666;
+  text-align: left;
+}
+
+.modal-callme label span {
+  margin-left: 52px;
+  margin-top: 12px;
+  display: block;
+}
+
+.modal-callme span.error {
+  color: brown;
+}
+
+.modal-callme .checkbox-after {
+  &:checked {
+    &:before {
+      background: #fff url(../img/black-check-box-with-white-check.svg) no-repeat center center / contain;
+    }
+  }
+}
+
+
+

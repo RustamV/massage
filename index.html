@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Массажный салон</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+  <link rel="preload" href="/fonts/Oranienbaum.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/SFUIDisplay-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/SFUIDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/MuseoSansCyrl-300.woff2" as="font" type="font/woff2" crossorigin>
+
+
+</head>
+
+<body>
+
+
+  <section class="banner" id="banner">
+    <header class="header">
+      <div class="header__left">
+        <div class="header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a href="#" class="header__logo">
+          <img src="img/logo.png" alt="Логотип Slim Lab">
+        </a>
+        <div class="header__card header__card--city">Ваш город: <strong>Москва</strong></div>
+        <button class="header__text header__text--dotted js-city-trigger" type="button">Выбрать другой</button>
+        <button class="header__card header__card--city header__card--invisible js-city-trigger"><strong>Москва</strong></button>
+      </div>
+      <div class="header__right">
+        <button class="header__text header__text--dotted" data-toggle="modal" data-target="#modalCall">Заказать
+          звонок</button>
+        <a href="tel:+79373100120" class="header__card header__card--phone">8 (800) <strong>310-01-20</strong></a>
+      </div>
+      <nav class="main-navigation">
+        <a class="main-navigation__link" href="#banner">Главная</a>
+        <a class="main-navigation__link" href="#about-company">О студии</a>
+        <a class="main-navigation__link" href="#pricing">Наши цены</a>
+        <a class="main-navigation__link" href="#staff">Наши мастера</a>
+        <a class="main-navigation__link" href="#results">Результаты</a>
+        <a class="main-navigation__link" href="#reviews">Отзывы</a>
+        <a class="main-navigation__link" href="#courses">Обучение</a>
+        <a class="main-navigation__link" href="#application">Наш инстаграм</a>
+        <a class="main-navigation__link" href="#footer">Контакты</a>
+        <a class="main-navigation__link" href="#">Скачать приложение</a>
+      </nav>
+    </header>
+    <div class="banner__container">
+      <div class="banner__wrapper">
+        <h1 class="banner__title">SLIM LAB</h1>
+        <h2 class="banner__subtitle">Доступная коррекция фигуры</h2>
+        <ul class="company-services">
+          <li class="company-services__item">LPG «Ролико -<br>
+            вакуумный» массаж</li>
+          <li class="company-services__item">Ультразвуковая <br>
+            кавитация</li>
+          <li class="company-services__item">T-Shock<br>
+            обертывание</li>
+          <li class="company-services__item">Профессиональная<br>
+            косметика для тела</li>
+        </ul>
+        <p class="banner__offer-text">Оставь заявку сейчас и получи первую
+          процедуру LPG массажа <strong>БЕСПЛАТНО</strong></p>
+        <button class="btn banner__btn" data-toggle="modal" data-target="#modalCall">Записаться</button>
+        <div class="social">
+          <ul class="social__icons">
+            <li class="social__item">
+              <a href="https://vk.com/slimlab_ufa" class="social__link" target="_blank">
+                <img src="img/vk-social-network-logo.svg" alt="Логотип VK">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.instagram.com/slimlab_ufa/" class="social__link" target="_blank">
+                <img src="img/instagram-logo.svg" alt="Логотип Instagram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link" target="_blank">
+                <img src="img/facebook-logo.svg" alt="Логотип Facebook">
+              </a>
+            </li>
+          </ul>
+          <div class="social__title">Социальные сети</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="about-company" id="about-company">
+    <div class="about-company__container">
+      <h2 class="title about-company__title">Мы исполняем мечты... мечты об идеальной фигуре!</h2>
+      <div class="about-company__left">
+        <ul class="company-advantages">
+          <li class="company-advantages__item company-advantages__item--shield">Современные и безопасные<br>
+            методики</li>
+          <li class="company-advantages__item company-advantages__item--light">Профессиональное<br>
+            оборудование</li>
+          <li class="company-advantages__item company-advantages__item--hand">Доступные цены<br>
+            на наши услуги</li>
+          <li class="company-advantages__item company-advantages__item--nurse">Мастера только с<br>
+            медицинским образованием</li>
+        </ul>
+        <button class="btn about-company__btn" data-toggle="modal" data-target="#modalCall">Записаться</button>
+      </div>
+      <div class="services">
+        <div class="service">
+          <span class="service__number">01</span>
+          <h2 class="service__title">LPG «Ролико - вакуумный» массаж</h2>
+          <p class="service__description">Моделирование силуэта, лечение целлюлита, восстановление тургора кожи,
+            уменьшение объемов тела</p>
+          <button class="service__btn btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA">Смотреть</button>
+        </div>
+        <div class="service">
+          <span class="service__number">02</span>
+          <h2 class="service__title">Ультразвуковая кавитация</h2>
+          <p class="service__description">Низкочастотные УЗ лучи, комфортно и безболезненно, уменьшение локальных
+            жировых отложений, лечение целлюлита</p>
+          <button class="service__btn btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA">Смотреть</button>
+        </div>
+        <div class="service">
+          <span class="service__number">03</span>
+          <h2 class="service__title">T - shock обёртывание</h2>
+          <p class="service__description">До минус 80 см в объеме за одну процедуру, бандажное обертывание, уникальный
+            состав из 40 лекарственных компонентов</p>
+          <button class="service__btn btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA">Смотреть</button>
+        </div>
+      </div>
+      <div class="video-link video-link--about">
+        <a class="btn--player btn--video btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA"></a>
+        <p class="video-link__description">Посмотрите видео про студию Slim Lab</p>
+      </div>
+    </div>
+
+  </section>
+  <section class="pricing" id="pricing">
+    <div class="pricing__container">
+      <h2 class="title title--pricing">Наши цены</h2>
+      <h3 class="subtitle subtitle--pricing">При приобретении абонемента на первой процедуре скидка 20%</h3>
+      <div class="pricing__container-wrap">
+          <div class="pricing__row">
+            <div class="pricing__column">
+              <div class="pricing__content">
+                <h3 class="pricing__title">LPG(Ролико-вакуумный) массаж</h3>
+                <h4 class="pricing__subscription-title">Абонементы:</h4> <!-- subscription = Абонемент -->
+                <ul class="unordered-list unordered-list--pricing">
+                  <li class="unordered-list__item unordered-list__item--pricing">5 процедур - <strong>5500 р.</strong></li>
+                  <li class="unordered-list__item unordered-list__item--pricing">10 процедур - <strong>10000 р.</strong>
+                  </li>
+                  <li class="unordered-list__item unordered-list__item--pricing">15 процедур - <strong>13000 р.</strong>
+                  </li>
+                </ul>
+                <h4 class="pricing__price-title">Разовая стоимость</h4>
+                <p class="pricing__price">1200 <span>руб.</span></p>
+                <button class="btn--pricing btn" data-toggle="modal" data-target="#modalCall">Записаться</button>
+              </div>
+
+            </div>
+            <div class="pricing__column">
+              <div class="pricing__content">
+                <h3 class="pricing__title">Ультразвуковая кавитация</h3>
+                <h4 class="pricing__subscription-title">Абонементы:</h4> <!-- subscription = Абонемент -->
+                <ul class="unordered-list unordered-list--pricing">
+                  <li class="unordered-list__item unordered-list__item--pricing">3 процедуры - <strong>2250 р.</strong></li>
+                  <li class="unordered-list__item unordered-list__item--pricing">5 процедур - <strong>3500 р.</strong></li>
+                  <li class="unordered-list__item unordered-list__item--pricing">10 процедур - <strong>6500 р.</strong></li>
+                </ul>
+                <h4 class="pricing__price-title">Разовая стоимость</h4>
+                <p class="pricing__price">800 <span>руб.</span></p>
+                <button class="btn--pricing btn" data-toggle="modal" data-target="#modalCall">Записаться</button>
+              </div>
+
+            </div>
+            <div class="pricing__column">
+              <div class="pricing__content">
+                <h3 class="pricing__title">T-Shock <br> обертывание</h3>
+                <h4 class="pricing__subscription-title">Абонементы:</h4> <!-- subscription = Абонемент -->
+                <ul class="unordered-list unordered-list--pricing">
+                  <li class="unordered-list__item unordered-list__item--pricing">3 процедуры - <strong>4500 р.</strong></li>
+                  <li class="unordered-list__item unordered-list__item--pricing">5 процедур - <strong>7000 р.</strong></li>
+                  <li class="unordered-list__item unordered-list__item--pricing">10 процедур - <strong>13000 р.</strong>
+                  </li>
+                </ul>
+                <h4 class="pricing__price-title">Разовая стоимость</h4>
+                <p class="pricing__price">1600 <span>руб.</span></p>
+                <button class="btn--pricing btn" data-toggle="modal" data-target="#modalCall">Записаться</button>
+              </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="staff" id="staff">
+
+    <div class="container">
+      <div class="staff__row">
+        <div class="staff__col-left">
+          <div class="staff__slider" dir="rtl">
+            <div class="staff__slide ">
+              <section class="personal personal--olga">
+                <h3 class="personal__title">Ольга</h3>
+                <h4 class="personal__subtitle">Мастер T-Shock обертывания</h4>
+                <p class="personal__description">Повседневная практика показывает, что сложившаяся структура организации играет
+                  важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач, повседневная
+                  практика показывает</p>
+              </section>
+            </div>
+            <div class="staff__slide ">
+              <section class="personal personal--marina">
+                <h3 class="personal__title">Марина</h3>
+                <h4 class="personal__subtitle">Мастер кавитации</h4>
+                <p class="personal__description">Повседневная практика показывает, что сложившаяся структура организации играет
+                  важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач, повседневная
+                  практика показывает</p>
+              </section>
+            </div>
+            <div class="staff__slide ">
+              <section class="personal personal--elizaveta">
+                <h3 class="personal__title">Елизавета</h3>
+                <h4 class="personal__subtitle">Мастер LPG массажа</h4>
+                <p class="personal__description">Повседневная практика показывает, что сложившаяся структура организации играет
+                  важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач, повседневная
+                  практика показывает</p>
+              </section>
+            </div>
+            <div class="staff__slide ">
+              <section class="personal personal--olga">
+                <h3 class="personal__title">Ольга</h3>
+                <h4 class="personal__subtitle">Мастер T-Shock обертывания</h4>
+                <p class="personal__description">Повседневная практика показывает, что сложившаяся структура организации играет
+                  важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач, повседневная
+                  практика показывает</p>
+              </section>
+            </div>
+            <div class="staff__slide ">
+              <section class="personal personal--marina">
+                <h3 class="personal__title">Марина</h3>
+                <h4 class="personal__subtitle">Мастер кавитации</h4>
+                <p class="personal__description">Повседневная практика показывает, что сложившаяся структура организации играет
+                  важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач, повседневная
+                  практика показывает</p>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="staff__col-right">
+          <div class="staff__right">
+          <h2 class="title title--staff">Для вас работают мастера только с медицинским образованием</h2>
+            <div class="staff__controls">
+              <button class="btn btn--staff btn--staff-left js-btn-staff-left"></button>
+              <p class="staff__pagination js-staff-pagi"></p>
+              <button class="btn btn--staff btn--staff-right js-btn-staff-right"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="results" id="results">
+    <div class="results__container">
+      <h2 class="title title--results">Ваш результат - наша награда</h2>
+      <h3 class="subtitle subtitle--results">Обещаем вам незабываемый отдых и преображение</h3>
+      <div class="results__slider-wrapper">
+        <div class="results__slider">
+          <div class="results__item">
+            <div class="results__first-image">
+                <a data-fancybox="" href="img/results-slider-1.jpg">
+                  <img src="img/results-slider-1.jpg" alt="До процедуры">
+                </a>
+            </div>
+            <div class="results__second-image">
+              <a data-fancybox="" href="img/results-slider-2.jpg">
+                <img src="img/results-slider-2.jpg" alt="После процедуры">
+              </a>
+            </div>
+          </div>
+          <div class="results__item">
+            <div class="results__first-image">
+                <a data-fancybox="" href="img/results-slider-1.jpg">
+                  <img src="img/results-slider-1.jpg" alt="До процедуры">
+                </a>
+            </div>
+            <div class="results__second-image">
+              <a data-fancybox="" href="img/results-slider-2.jpg">
+                <img src="img/results-slider-2.jpg" alt="После процедуры">
+              </a>
+            </div>
+          </div>
+          <div class="results__item">
+            <div class="results__first-image">
+                <a data-fancybox="" href="img/results-slider-1.jpg">
+                  <img src="img/results-slider-1.jpg" alt="До процедуры">
+                </a>
+            </div>
+            <div class="results__second-image">
+              <a data-fancybox="" href="img/results-slider-2.jpg">
+                <img src="img/results-slider-2.jpg" alt="После процедуры">
+              </a>
+            </div>
+          </div>
+          <div class="results__item">
+            <div class="results__first-image">
+                <a data-fancybox="" href="img/results-slider-1.jpg">
+                  <img src="img/results-slider-1.jpg" alt="До процедуры">
+                </a>
+            </div>
+            <div class="results__second-image">
+              <a data-fancybox="" href="img/results-slider-2.jpg">
+                <img src="img/results-slider-2.jpg" alt="После процедуры">
+              </a>
+            </div>
+          </div>
+          <div class="results__item">
+            <div class="results__first-image">
+                <a data-fancybox="" href="img/results-slider-1.jpg">
+                  <img src="img/results-slider-1.jpg" alt="До процедуры">
+                </a>
+            </div>
+            <div class="results__second-image">
+              <a data-fancybox="" href="img/results-slider-2.jpg">
+                <img src="img/results-slider-2.jpg" alt="После процедуры">
+              </a>
+            </div>
+          </div>
+          <div class="results__item">
+            <div class="results__first-image">
+                <a data-fancybox="" href="img/results-slider-1.jpg">
+                  <img src="img/results-slider-1.jpg" alt="До процедуры">
+                </a>
+            </div>
+            <div class="results__second-image">
+              <a data-fancybox="" href="img/results-slider-2.jpg">
+                <img src="img/results-slider-2.jpg" alt="После процедуры">
+              </a>
+            </div>
+          </div>
+          <div class="results__item">
+            <div class="results__first-image">
+                <a data-fancybox="" href="img/results-slider-1.jpg">
+                  <img src="img/results-slider-1.jpg" alt="До процедуры">
+                </a>
+            </div>
+            <div class="results__second-image">
+              <a data-fancybox="" href="img/results-slider-2.jpg">
+                <img src="img/results-slider-2.jpg" alt="После процедуры">
+              </a>
+            </div>
+          </div>
+          <div class="results__item">
+            <div class="results__first-image">
+                <a data-fancybox="" href="img/results-slider-1.jpg">
+                  <img src="img/results-slider-1.jpg" alt="До процедуры">
+                </a>
+            </div>
+            <div class="results__second-image">
+              <a data-fancybox="" href="img/results-slider-2.jpg">
+                <img src="img/results-slider-2.jpg" alt="После процедуры">
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="results__preview">
+          <div class="results__preview-item">
+            <div class="results__first-image">
+              <img src="img/results-slider-1.jpg" alt="До процедуры">
+            </div>
+            <div class="results__second-image">
+              <img src="img/results-slider-2.jpg" alt="После процедуры">
+            </div>
+          </div>
+          <div class="results__preview-item">
+            <div class="results__first-image">
+              <img src="img/results-slider-1.jpg" alt="До процедуры">
+            </div>
+            <div class="results__second-image">
+              <img src="img/results-slider-2.jpg" alt="После процедуры">
+            </div>
+          </div>
+          <div class="results__preview-item">
+            <div class="results__first-image">
+              <img src="img/results-slider-1.jpg" alt="До процедуры">
+            </div>
+            <div class="results__second-image">
+              <img src="img/results-slider-2.jpg" alt="После процедуры">
+            </div>
+          </div>
+          <div class="results__preview-item">
+            <div class="results__first-image">
+              <img src="img/results-slider-1.jpg" alt="До процедуры">
+            </div>
+            <div class="results__second-image">
+              <img src="img/results-slider-2.jpg" alt="После процедуры">
+            </div>
+          </div>
+          <div class="results__preview-item">
+            <div class="results__first-image">
+              <img src="img/results-slider-1.jpg" alt="До процедуры">
+            </div>
+            <div class="results__second-image">
+              <img src="img/results-slider-2.jpg" alt="После процедуры">
+            </div>
+          </div>
+          <div class="results__preview-item">
+            <div class="results__first-image">
+              <img src="img/results-slider-1.jpg" alt="До процедуры">
+            </div>
+            <div class="results__second-image">
+              <img src="img/results-slider-2.jpg" alt="После процедуры">
+            </div>
+          </div>
+          <div class="results__preview-item">
+            <div class="results__first-image">
+              <img src="img/results-slider-1.jpg" alt="До процедуры">
+            </div>
+            <div class="results__second-image">
+              <img src="img/results-slider-2.jpg" alt="После процедуры">
+            </div>
+          </div>
+          <div class="results__preview-item">
+            <div class="results__first-image">
+              <img src="img/results-slider-1.jpg" alt="До процедуры">
+            </div>
+            <div class="results__second-image">
+              <img src="img/results-slider-2.jpg" alt="После процедуры">
+            </div>
+          </div>
+
+        </div>
+        <div class="results__controls">
+          <button class="btn btn--staff btn--staff-left js-btn-results-left"></button>
+          <button class="btn btn--staff btn--staff-right js-btn-results-right"></button>
+        </div>
+      </div>
+      <div class="results__pagination">
+        <p class="js-results-pagi"></p>
+      </div>
+    </div>
+
+  </section>
+  <section class="reviews" id="reviews">
+    <div class="reviews__container">
+      <h2 class="title">Отзывы наших клиентов</h2>
+      <h3 class="subtitle subtitle--reviews">Лучшее представление о Slim Lab, это результаты наших клиентов</h3>
+      <ul class="nav nav-tabs reviews__tabs">
+        <li class="nav-item reviews__tab">
+          <a data-toggle="tab" class="nav-link active" href="#video-slider">Видео</a>
+        </li>
+        <li class="nav-item reviews__tab">
+          <a class="nav-link " data-toggle="tab" href="#social-slider">Соц. сети</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+          <div class="reviews__slider-wrapper fade show tab-pane active"  id="video-slider">
+            <div class="reviews__slider reviews__slider-first">
+                <div class="reviews__item">
+                  <img src="img/review-3.jpg" alt="Видеотзыв" class="reviews__image">
+                  <a class="btn--reviews btn--player btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA"></a>
+                </div>
+                <div class="reviews__item">
+                  <img src="img/review-1.jpg" alt="Видеотзыв" class="reviews__image">
+                  <a class="btn--reviews btn--player btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA"></a>
+                </div>
+                <div class="reviews__item">
+                  <img src="img/review-2.jpg" alt="Видеотзыв" class="reviews__image">
+                  <a class="btn--reviews btn--player btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA"></a>
+                </div>
+                <div class="reviews__item">
+                  <img src="img/review-3.jpg" alt="Видеотзыв" class="reviews__image">
+                  <a class="btn--reviews btn--player btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA"></a>
+                </div>
+                <div class="reviews__item">
+                  <img src="img/review-1.jpg" alt="Видеотзыв" class="reviews__image">
+                  <a class="btn--reviews btn--player btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA"></a>
+                </div>
+                <div class="reviews__item">
+                  <img src="img/review-2.jpg" alt="Видеотзыв" class="reviews__image">
+                  <a class="btn--reviews btn--player btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA"></a>
+                </div>
+                <div class="reviews__item">
+                  <img src="img/review-2.jpg" alt="Видеотзыв" class="reviews__image">
+                  <a class="btn--reviews btn--player btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA"></a>
+                </div>
+            </div>
+            <div class="reviews__controls">
+                <p class="reviews__pagination js-reviews-pagi-1"></p>
+              </div>
+          </div>
+        <div class="reviews__slider-wrapper fade  tab-pane"  id="social-slider">
+            <div class="reviews__slider reviews__slider-second ">
+                <div class="reviews__item">
+                  <a data-fancybox="" href="img/review-3.jpg">
+                    <img src="img/review-3.jpg" alt="Отзыв из социальных сетей" class="reviews__image">
+                  </a>
+                </div>
+                <div class="reviews__item">
+                  <a data-fancybox="" href="img/review-1.jpg">
+                    <img src="img/review-1.jpg" alt="Отзыв из социальных сетей" class="reviews__image">
+                  </a>
+                </div>
+                <div class="reviews__item">
+                  <a data-fancybox="" href="img/review-2.jpg">
+                    <img src="img/review-2.jpg" alt="Отзыв из социальных сетей" class="reviews__image">
+                  </a>
+                </div>
+                <div class="reviews__item">
+                  <a data-fancybox="" href="img/review-3.jpg">
+                    <img src="img/review-3.jpg" alt="Отзыв из социальных сетей" class="reviews__image">
+                  </a>
+                </div>
+                <div class="reviews__item">
+                  <a data-fancybox="" href="img/review-1.jpg">
+                    <img src="img/review-1.jpg" alt="Отзыв из социальных сетей" class="reviews__image">
+                  </a>
+                </div>
+                <div class="reviews__item">
+                  <a data-fancybox="" href="img/review-2.jpg">
+                    <img src="img/review-2.jpg" alt="Отзыв из социальных сетей" class="reviews__image">
+                  </a>
+                </div>
+                <div class="reviews__item">
+                  <a data-fancybox="" href="img/review-2.jpg">
+                    <img src="img/review-2.jpg" alt="Отзыв из социальных сетей" class="reviews__image">
+                  </a>
+                </div>
+              </div>
+              <div class="reviews__controls">
+                  <p class="reviews__pagination js-reviews-pagi-2"></p>
+                </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+  <section class="courses" id="courses">
+    <div class="courses__container">
+      <h2 class="title title--left title--courses">Хочешь стать мастером аппаратной коррекции фигуры?</h2>
+      <h3 class="subtitle subtitle--left subtitle--courses">Пройди идндивидуальное обучение от Slim Lab.</h3>
+
+      <div class="courses__wrapper">
+        <div class="course">
+          <h3 class="course__title">Курс аппаратной коррекции фигуры</h3>
+          <ul class="course__content">
+            <li class="course__item">Теоретическая часть</li>
+            <li class="course__item">Практика на моделях. Постановка «руки».</li>
+            <li class="course__item">Сертификат</li>
+          </ul>
+        </div>
+        <div class="course">
+          <h3 class="course__title">Курс мастера LPG (эндермологического) массажа</h3>
+          <ul class="course__content">
+            <li class="course__item">Теоретическая часть</li>
+            <li class="course__item">Практика на моделях. Постановка «руки».</li>
+            <li class="course__item">Сертификат</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="courses-info">
+        <div class="courses-info__left">
+          <div class="courses-info__pricing">
+            <p>Стоимость от <br> <b>5500 <span>руб.</span></b></p>
+            <p>Сроки обучения <br> <b>от 2<span>дней</span></b></p>
+          </div>
+          <div class="courses-info__offer">
+            <p>Оставь заявку сейчас и мы отправим
+              тебе обучающее пособие</p>
+            <button class="btn btn--offer" data-toggle="modal" data-target="#modalCall">Оставить заявку</button>
+          </div>
+        </div>
+        <div class="courses-info__right">
+          <ul class="courses-advantages">
+            <li class="courses-advantages__item">Не теоретики, а действующие мастера – практики</li>
+            <li class="courses-advantages__item">Обучение проводится в студии на собственном оборудовании</li>
+            <li class="courses-advantages__item">Модели и расходные материалы предоставляются – бесплатно</li>
+            <li class="courses-advantages__item">После обучения выдаем сертификат о прохождении курса</li>
+          </ul>
+        </div>
+      </div>
+      <div class="video-link video-link--courses">
+        <a class="btn--player btn--video btn" data-fancybox href="https://www.youtube.com/watch?v=2LpzgPKrwdA"></a>
+
+        <p class="video-link__description video-link__description--courses">Посмотрите видео о обучении</p>
+      </div>
+    </div>
+
+  </section>
+  <section class="application" id="application">
+    <div class="application__container">
+      <h2 class="title title--app">Скачай наше приложение и БУДЬ СТРОЙНОЙ!</h2>
+      <div class="application__content">
+        <div class="application__image">
+          <img src="img/Screen.png" alt="Мобильное приложение">
+        </div>
+        <div class="application__info">
+          <section class="application__info-content">
+            <h3 class="application__title">Благодаря мобильному приложению вы сможете:</h3>
+            <ul class="unordered-list unordered-list--application">
+              <li class="unordered-list__item">Моментально записаться на процедуру</li>
+              <li class="unordered-list__item">Отслеживать ваши посещения студии</li>
+              <li class="unordered-list__item">Участвовать в программе лояльности</li>
+              <li class="unordered-list__item">Первыми узнать все новости</li>
+              <li class="unordered-list__item">Получать полезную информацию</li>
+              <li class="unordered-list__item">Следить за новинками</li>
+            </ul>
+
+            <div class="application__links">
+              <a href="" class="application__link">
+                <img src="img/appstore.png" alt="AppStore">
+              </a>
+              <a href="" class="application__link">
+                <img src="img/googleplay.png" alt="GooglePlay">
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="application__widget">
+          <script src="https://vk.com/js/api/openapi.js?160"></script>
+
+          <!-- VK Widget -->
+          <div class="application__widget-vk">
+            <div id="vk_groups"></div>
+          </div>
+          <script>
+            VK.Widgets.Group("vk_groups", { mode: 4, width: "auto", height: "600" }, 90136132);
+          </script>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="instagram" id="instagram">
+
+    <h2 class="title instagram__title">Наш инстаграм</h2>
+    <div class="instagram__links">
+      <a href="">
+        <img src="img/instagram.svg" alt="Логотип Instagram">
+      </a>
+      <a href="">@slimlab_ufa</a>
+
+    </div>
+    <div class="instagram-slider">
+      <a class="instagram-slider__item" href="">
+        <img class="instagram-slider__image" src="img/insta-img-1.png" alt="Фото из Instagram Slim Lab">
+        <div class="instagram-slider__hover"></div>
+      </a>
+      <a class="instagram-slider__item" href="">
+        <img class="instagram-slider__image" src="img/insta-img-2.png" alt="Фото из Instagram Slim Lab">
+        <div class="instagram-slider__hover"></div>
+      </a>
+      <a class="instagram-slider__item" href="">
+        <img class="instagram-slider__image" src="img/insta-img-3.png" alt="Фото из Instagram Slim Lab">
+        <div class="instagram-slider__hover"></div>
+      </a>
+      <a class="instagram-slider__item" href="">
+        <img class="instagram-slider__image" src="img/insta-img-4.png" alt="Фото из Instagram Slim Lab">
+        <div class="instagram-slider__hover"></div>
+      </a>
+      <a class="instagram-slider__item" href="">
+        <img class="instagram-slider__image" src="img/insta-img-5.png" alt="Фото из Instagram Slim Lab">
+        <div class="instagram-slider__hover"></div>
+      </a>
+      <a class="instagram-slider__item" href="">
+        <img class="instagram-slider__image" src="img/insta-img-1.png" alt="Фото из Instagram Slim Lab">
+        <div class="instagram-slider__hover"></div>
+      </a>
+      <a class="instagram-slider__item" href="">
+        <img class="instagram-slider__image" src="img/insta-img-2.png" alt="Фото из Instagram Slim Lab">
+        <div class="instagram-slider__hover"></div>
+      </a>
+      <a class="instagram-slider__item" href="">
+        <img class="instagram-slider__image" src="img/insta-img-3.png" alt="Фото из Instagram Slim Lab">
+        <div class="instagram-slider__hover"></div>
+      </a>
+      <a class="instagram-slider__item" href="">
+        <img class="instagram-slider__image" src="img/insta-img-4.png" alt="Фото из Instagram Slim Lab">
+        <div class="instagram-slider__hover"></div>
+      </a>
+      <a class="instagram-slider__item" href="">
+        <img class="instagram-slider__image" src="img/insta-img-5.png" alt="Фото из Instagram Slim Lab">
+        <div class="instagram-slider__hover"></div>
+      </a>
+
+
+
+
+    </div>
+    <div class="instagram__controls">
+      <p class="instagram__pagination js-insta-pagi"></p>
+    </div>
+
+
+
+  </section>
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <a href="" class="footer__logo">
+        <img src="img/footer-logo.png" alt="Логотип Slim Lab">
+      </a>
+      <div class="contacts">
+        <div class="contacts__block">
+          <h2 class="contact__title">Приезжайте</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p>г. Уфа пл. Верхнеторговая д.4 п.1 аппартаменты 1009</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__block">
+          <h2 class="contact__title">Звоните</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item"> <a href="tel:+79373100120">8 (937) 310-01-20</a> </li>
+          </ul>
+        </div>
+        <div class="contacts__block">
+          <h2 class="contact__title">Скачивайте</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item"> <a href="" target="_blank">AppStore</a> </li>
+            <li class="contacts__item"> <a href="" target="_blank">GooglePlay</a> </li>
+          </ul>
+        </div>
+        <div class="contacts__block">
+          <h2 class="contact__title">Следите</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item"> <a href="https://vk.com/slimlab_ufa" target="_blank">vkontakte</a> </li>
+            <li class="contacts__item"> <a href="https://www.instagram.com/slimlab_ufa/" target="_blank">instagram</a>
+            </li>
+            <li class="contacts__item"> <a href="" target="_blank">facebook</a> </li>
+          </ul>
+        </div>
+
+
+      </div>
+      <div class="footer__bottom">
+        <a href="" class="footer__policy">Политика конфиденциальности</a>
+        <a href="https://pplans.ru" target="_blank" class="footer__dev-logo"><img src="img/pplans-white.svg" alt="Логотип PeoplePlans"></a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <div class="modal modal-gratitude" id="modal-gratitude">
+    <div class="modal-gratitude__container">
+
+      <img src="img/logo.png" alt="Логотип Slim Lab" class="modal-gratitude__logo">
+      <img src="img/success.svg" alt="Заявка отправлена" class="modal-gratitude__image">
+      <h2 class="modal-gratitude__title">Спасибо за заявку!</h2>
+      <p class="modal-gratitude__subtitle">Наши менеджеры свяжутся с вами в ближайшее время</p>
+      <button class="modal-gratitude__btn btn btn--white modal-close modal-gratitude__close">Вернуться на главную</button>
+
+    </div>
+  </div>
+
+
+
+  <div class="modal-city" id="modal-city">
+    <div class="modal-city__container">
+      <img src="img/logo.png" alt="Логотип Slim Lab" class="modal-city__logo">
+      <h3 class="modal-city__title">Выберите город
+        <sub class="closed-modal">
+          <span></span>
+          <span></span>
+        </sub>
+      </h3>
+      <ul class="modal-city__list">
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">А</h3>
+          <ul>
+            <li><a href="aktobe/">Актобе</a></li>
+            <li><a href="almaty/">Алматы</a></li>
+            <li><a href="almetyevsk/">Альметьевск</a></li>
+            <li>Ангарск<br><span>(скоро открытие)</span></li>
+            <li><a href="arkhangelsk/">Архангельск</a></li>
+            <li><a href="astana/">Астана</a></li>
+            <li><a href="astrahan/">Астрахань</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Б</h3>
+          <ul>
+            <li><a href="balashikha/">Балашиха</a></li>
+            <li><a href="barnaul/">Барнаул</a></li>
+            <li><a href="belgorod/">Белгород</a></li>
+            <li><a href="bishkek/">Бишкек</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">В</h3>
+          <ul>
+            <li>Волгоград <br><span>(скоро открытие)</span></li>
+            <li><a href="vologda/">Вологда</a></li>
+            <li>Воронеж <br><span>(скоро открытие)</span></li>
+            <li><a href="voskresensk/">Воскресенск</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Е</h3>
+          <ul>
+            <li>Екатеринбург <br><span>(скоро открытие)</span></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Ж</h3>
+          <ul>
+            <li><a href="zhukovsky/">Жуковский</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">И</h3>
+          <ul>
+            <li><a href="ivanovo/">Иваново</a></li>
+            <li>Ижевск <br><span>(скоро открытие)</span></li>
+            <li><a href="irkutsk/">Иркутск</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Й</h3>
+          <ul>
+            <li><a href="yoshkar-ola/">Йошкар-Ола</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">К</h3>
+          <ul>
+            <li><a href="kazan/">Казань</a></li>
+            <li><a href="kaliningrad/">Калининград</a></li>
+            <li>Караганда <br><span>(скоро открытие)</span></li>
+            <li><a href="kiev/">Киев</a></li>
+            <li><a href="kirov/">Киров</a></li>
+            <li><a href="kovrov/">Ковров</a></li>
+            <li><a href="korolev/">Королев</a></li>
+            <li><a href="krasnogorsk/">Красногорск</a></li>
+            <li><a href="krasnodar/">Краснодар</a></li>
+            <li>Красноярск <br><span>(скоро открытие)</span></li>
+            <li>Кызылорда <br><span>(скоро открытие)</span></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Л</h3>
+          <ul>
+            <li><a href="lyubertsy/">Люберцы</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Н</h3>
+          <ul>
+            <li><a href="nabchelny/">Набережные Челны</a></li>
+            <li><a href="nizhnevartovsk/">Нижневартовск</a></li>
+            <li><a href="nizhny-novgorod/">Нижний Новгород</a></li>
+            <li>Новосибирск <br><span>(скоро открытие)</span></li>
+            <li><a href="novocherkassk/">Новочеркасск</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">О</h3>
+          <ul>
+            <li><a href="oktyabrsky/">Октябрьский</a></li>
+            <li><a href="omsk/">Омск</a></li>
+            <li><a href="orenburg/">Оренбург</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">П</h3>
+          <ul>
+            <li><a href="penza/">Пенза</a></li>
+            <li><a href="perm/">Пермь</a></li>
+            <li><a href="pskov/">Псков</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Р</h3>
+          <ul>
+            <li><a href="ramenskoe/">Раменское</a></li>
+            <li><a href="rostov/">Ростов-на-Дону</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">С</h3>
+          <ul>
+            <li><a href="samara/">Самара</a></li>
+            <li><a href="spb/">Санкт-Петербург</a></li>
+            <li><a href="saransk/">Саранск</a></li>
+            <li><a href="saratov/">Саратов</a></li>
+            <li><a href="severodvinsk/">Северодвинск</a></li>
+            <li>Семей <br><span>(скоро открытие)</span></li>
+            <li><a href="simferopol/">Симферополь</a></li>
+            <li><a href="sochi/">Сочи</a></li>
+            <li><a href="stavropol/">Ставрополь</a></li>
+            <li><a href="stary-oskol/">Старый Оскол</a></li>
+            <li><a href="sterlitamak/">Стерлитамак</a></li>
+            <li><a href="surgut/">Сургут</a></li>
+            <li><a href="syktyvkar/">Сыктывкар</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Т</h3>
+          <ul>
+            <li>Таллин <br><span>(скоро открытие)</span></li>
+            <li><a href="tashkent/">Ташкент</a></li>
+            <li><a href="tolyatti/">Тольятти</a></li>
+            <li><a href="tyumen/">Тюмень</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">У</h3>
+          <ul>
+            <li><a href="ulan-ude/">Улан-Удэ</a></li>
+            <li><a href="ulyanovsk/">Ульяновск</a></li>
+            <li><a href="ust-kamenogorsk/">Усть-Каменогорск</a></li>
+            <li><a href="ufa/">Уфа</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Х</h3>
+          <ul>
+              <li><a href="khabarovsk/">Хабаровск</a></li>
+            <li><a href="kharkov/">Харьков</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Ч</h3>
+          <ul>
+            <li><a href="cheboksary/">Чебоксары</a></li>
+            <li><a href="chelyabinsk/">Челябинск</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Ш</h3>
+          <ul>
+            <li><a href="shymkent/">Шымкент</a></li>
+          </ul>
+        </li>
+        <li class="modal-city__item">
+          <h3 class="modal-city__item-title">Я</h3>
+          <ul>
+            <li><a href="yakutsk/">Якутск</a></li>
+            <li><a href="yaroslavl/">Ярославль</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="modal-city__footer">
+        <a href="" class="modal-city__policy">Политика конфиденциальности</a>
+        <a href="https://pplans.ru" target="_blank" class="modal-city__dev-logo"><img src="img/pplans-white.svg" alt="Логотип PeoplePlans"></a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade modal-callme" id="modalCall">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <h3 class="modal-callme__title">Заказать звонок</h3>
+        <form method="post" class="modal-callme__form ajax_form" id="order_call">
+          <input type="text" name="name" value="" placeholder="Ваше имя" required="">
+          <span class="error error_name"></span>
+          <input type="tel" name="phone" value="" placeholder="+7 (___) ___ - __ - __" required="" maxlength="13">
+          <span class="error error_name"></span>
+          <button class="btn js-gratitude-trigger">ЗАКАЗАТЬ ЗВОНОК</button>
+          <input class="checkbox-after" id="callme-check" type="checkbox" name="check" value="true" checked="checked"
+            required="">
+        </form>
+        <label class="modal-callme__checkbox" for="callme-check"><span>Я даю свое согласие на обработку <br>персональных
+            данных</span></label>
+
+      </div>
+    </div>
+  </div>
+  <script src="libs/jquery-3.4.1.min.js"></script>
+  <script src="libs/object-fit-images/dist/ofi.min.js"></script>
+  <script src="libs/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="libs/bootstrap-4.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="libs/jquery.fancybox.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
